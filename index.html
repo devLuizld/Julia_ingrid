@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Julia Indrid</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://www.transparenttextures.com/patterns/symphony.png') repeat;
+      background-color: #e2e8f0;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #4a90e2;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      color: #4a90e2;
+    }
+
+    header p {
+      font-size: 1em;
+      max-width: 700px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .imagem-box {
+      background-color: rgb(171, 202, 238);
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .imagem-box:hover {
+      transform: scale(1.03);
+    }
+
+    .imagem-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .descricao {
+      padding: 15px;
+    }
+
+    .descricao h3 {
+      color: #4a90e2;
+      margin-bottom: 5px;
+      font-size: 1.1em;
+    }
+
+    .descricao p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.85em;
+      color: #777;
+    }
+
+    /* Ícone WhatsApp fixo */
+    .whatsapp-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-link img {
+      width: 55px;
+      height: 55px;
+      transition: transform 0.3s;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+    }
+
+    .whatsapp-link img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .imagem-box img {
+        height: 150px;
+      }
+
+      .descricao h3 {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="julia.jpg" alt="Foto da Julia Indrid" />
+    <h1>Julia Indrid Costa Nascimento</h1>
+    <p>
+      Sou uma jovem dedicada, com boa comunicação, conhecimento básico em Excel e pacote Office, e estou em busca de uma oportunidade como Jovem Aprendiz para desenvolver minhas habilidades e aprender mais.
+    </p>
+  </header>
+
+  <section class="galeria">
+
+    <div class="imagem-box">
+      <img src="organização.png" alt="Organização" />
+      <div class="descricao">
+        <h3>Organização</h3>
+        <p>Sou organizada e gosto de manter tudo em ordem para facilitar a rotina.</p>
+      </div>
+    </div>
+
+    <div class="imagem-box">
+      <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="Vontade de Aprender" />
+      <div class="descricao">
+        <h3>Vontade de Aprender</h3>
+        <p>Tenho muita disposição para aprender e me desenvolver profissionalmente.</p>
+      </div>
+    </div>
+
+    <div class="imagem-box">
+      <img src="comunicação.jpeg" alt="Boa Comunicação" />
+      <div class="descricao">
+        <h3>Boa Comunicação</h3>
+        <p>Tenho facilidade para me comunicar com clareza e empatia.</p>
+      </div>
+    </div>
+
+    <div class="imagem-box">
+      <img src="trabalho_equipe.jpeg" alt="Trabalho em Equipe" />
+      <div class="descricao">
+        <h3>Trabalho em Equipe</h3>
+        <p>Gosto de colaborar e trabalhar em equipe para alcançar bons resultados.</p>
+      </div>
+    </div>
+
+    <div class="imagem-box">
+      <img src="ofice.jpeg" alt="Pacote Office" />
+      <div class="descricao">
+        <h3>Pacote Office</h3>
+        <p>Conhecimento básico em Word, Excel e PowerPoint.</p>
+      </div>
+    </div>
+
+    <div class="imagem-box">
+      <img src="pontual.jpeg" alt="Pontualidade" />
+      <div class="descricao">
+        <h3>Pontualidade</h3>
+        <p>Levo a sério meus compromissos e sou pontual em todas as atividades.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Botão do WhatsApp -->
+  <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="whatsapp-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+
+  <footer>
+    © 2025 - Portfólio de Julia Indrid
+  </footer>
+
+</body>
+</html>
